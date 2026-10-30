@@ -1,0 +1,27 @@
+# Blender temporary and backup files
+*.blend1
+*.blend2
+*.blend3
+*.blend4
+*.blend5
+*.blend~
+
+# Verge3D puzzle backups
+v3d_app_data/puzzles_backup/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor and tooling files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local dependency and build output
+node_modules/
+dist/
+build/
