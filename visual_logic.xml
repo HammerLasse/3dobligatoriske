@@ -1,10 +1,12 @@
 <xml xmlns="https://www.soft8soft.com/puzzles/xml">
   <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
-  <tab name="Main" type="CommonTab" active="true" scrollx="172.57208932271078" scrolly="188.9414371961425" scale="0.5935620767722013">
+  <tab name="Main" type="CommonTab" active="true" scrollx="-525.068757107264" scrolly="-254.33159121281028" scale="0.6935539619171466">
     <variables>
       <variable id="6KY7UslK?s3[MmZ*X`hN">ramOut</variable>
       <variable id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</variable>
+      <variable id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</variable>
       <variable id="8XpwY}XDlfeYz9N|=+G=">moboOut</variable>
+      <variable id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</variable>
       <variable id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</variable>
       <variable id="hqwVu:*+{u~38Z:#GbNH">panelOpen</variable>
     </variables>
@@ -343,196 +345,318 @@
         </block>
       </value>
       <next>
-        <block type="hide" id="y#s40=v`Z3zT8d7u$!:{">
+        <block type="whenClicked" id="Af[}Uc}!:1K=naFSt,!S" inline="false">
+          <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
           <value name="VALUE">
-            <shadow type="objectList" id="uJ+r[G(_GE~g#MY}s~AG">
-              <field name="FIELDNAME">Cube.098</field>
+            <shadow type="objectList" id="tcFvo*bHfF~|n~?aiy|S">
+              <field name="FIELDNAME">Cube.101</field>
             </shadow>
           </value>
-          <next>
-            <block type="whenClicked" id="Af[}Uc}!:1K=naFSt,!S" inline="false">
-              <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
-              <field name="X_RAY">FALSE</field>
-              <field name="DOUBLE_CLICK">FALSE</field>
-              <field name="LEFT_BUTTON">TRUE</field>
-              <field name="MIDDLE_BUTTON">TRUE</field>
-              <field name="RIGHT_BUTTON">TRUE</field>
-              <value name="VALUE">
-                <shadow type="objectList" id="tcFvo*bHfF~|n~?aiy|S">
-                  <field name="FIELDNAME">Cube.101</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="controls_if" id="fbs.%j*c+Yy(P8z;PSNM">
-                  <mutation elseif="1"></mutation>
-                  <value name="IF0">
-                    <block type="logic_compare" id="^I}/8==k)(@L9r.pJXe|">
-                      <field name="OP">EQ</field>
-                      <value name="A">
-                        <block type="variables_get" id="Wh+@]@B^4h^ZNdpQ/:Ej">
-                          <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
-                        </block>
-                      </value>
-                      <value name="B">
-                        <block type="logic_boolean" id="nobT*qx-5}$a#NCq$8cs">
-                          <field name="BOOL">FALSE</field>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
-                  <statement name="DO0">
-                    <block type="variables_set" id="JZTm5en~YvB2=rRP3zS5">
+          <statement name="DO">
+            <block type="controls_if" id="fbs.%j*c+Yy(P8z;PSNM">
+              <mutation elseif="1"></mutation>
+              <value name="IF0">
+                <block type="logic_compare" id="^I}/8==k)(@L9r.pJXe|">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="Wh+@]@B^4h^ZNdpQ/:Ej">
                       <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
-                      <value name="VALUE">
-                        <block type="logic_boolean" id="j{iUWf7j{p9mRCEf1!Tw">
-                          <field name="BOOL">TRUE</field>
-                        </block>
-                      </value>
-                      <next>
-                        <block type="show" id="9.mbfb};yEh)f*tSJ$v3">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="TCE|`zzfLs2N#UBsWi9^">
-                              <field name="FIELDNAME">Cube.098</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="assignMaterial" id="ODB#Vq9SERiG^[oh]#Kt">
-                              <mutation usematerialindex="false"></mutation>
-                              <value name="VALUE2">
-                                <shadow type="materialList" id="-B/eBZ(gx.vAx]tFMc0!">
-                                  <field name="FIELDNAME">Material.125</field>
-                                </shadow>
-                              </value>
-                              <value name="VALUE1">
-                                <shadow type="objectList" id="|xR(bIxb@Or|YqBEPLA|">
-                                  <field name="FIELDNAME">Cube.098</field>
-                                </shadow>
-                              </value>
-                              <next>
-                                <block type="playAnimationAdv" id="D.xWPFQyvfU89:F+_*zi">
-                                  <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
-                                  <field name="REVERSED">FALSE</field>
-                                  <field name="LOOP">LoopOnce</field>
-                                  <value name="VALUE">
-                                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
-                                      <field name="FIELDNAME">&lt;none&gt;</field>
-                                    </shadow>
-                                    <block type="getAnimations" id="PoDjU/v#5yC2-0DU:rb,">
-                                      <mutation useid="false"></mutation>
-                                      <value name="OBJECTINPUT">
-                                        <shadow type="objectList" id="?%_op%}WMs9$fbrS*0u1">
-                                          <field name="FIELDNAME">Cube.101</field>
-                                        </shadow>
-                                      </value>
-                                    </block>
-                                  </value>
-                                  <value name="FROM">
-                                    <shadow type="math_number" id="6je~xJ_4_8-zX;Qq7([b">
-                                      <field name="NUM">1</field>
-                                    </shadow>
-                                  </value>
-                                  <value name="TO">
-                                    <shadow type="math_number" id="C5^l!eJBy9ir,quczDG4">
-                                      <field name="NUM">50</field>
-                                    </shadow>
-                                  </value>
-                                  <value name="SPEED">
-                                    <shadow type="math_number" id="zFWsk8y2k(1ydHf1D9!m">
-                                      <field name="NUM">4</field>
-                                    </shadow>
-                                  </value>
-                                </block>
-                              </next>
-                            </block>
-                          </next>
-                        </block>
-                      </next>
-                    </block>
-                  </statement>
-                  <value name="IF1">
-                    <block type="logic_operation" id="0jW_u]8XAU)M;.#NemHf">
-                      <field name="OP">AND</field>
-                      <value name="A">
-                        <block type="logic_compare" id="4Yw+3iFSM5yk$rM46M^P">
-                          <field name="OP">EQ</field>
-                          <value name="A">
-                            <block type="variables_get" id="[1j3q[@eTxx#KH~`-kx3">
-                              <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
-                            </block>
-                          </value>
-                          <value name="B">
-                            <block type="logic_boolean" id="]M*+4^I^}Ah6M|F~NO-_">
-                              <field name="BOOL">TRUE</field>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
-                      <value name="B">
-                        <block type="logic_compare" id="c%SjIz*5.zJ:4NMxS:Z9">
-                          <field name="OP">EQ</field>
-                          <value name="A">
-                            <block type="variables_get" id="y6p6_QYPOJbPt1FM{./8">
-                              <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
-                            </block>
-                          </value>
-                          <value name="B">
-                            <block type="logic_boolean" id="W#1~8.4kdcb!/lqwWz_{">
-                              <field name="BOOL">FALSE</field>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
                     </block>
                   </value>
-                  <statement name="DO1">
-                    <block type="playAnimationAdv" id="Gh4uMpA1sG:TMkd=3m`3">
-                      <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
-                      <field name="REVERSED">TRUE</field>
+                  <value name="B">
+                    <block type="logic_boolean" id="nobT*qx-5}$a#NCq$8cs">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="variables_set" id="JZTm5en~YvB2=rRP3zS5">
+                  <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="j{iUWf7j{p9mRCEf1!Tw">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="D.xWPFQyvfU89:F+_*zi">
+                      <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
                       <field name="LOOP">LoopOnce</field>
                       <value name="VALUE">
                         <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
                           <field name="FIELDNAME">&lt;none&gt;</field>
                         </shadow>
-                        <block type="getAnimations" id="H)dzl,$2V(Jm_bR8m0EK">
+                        <block type="getAnimations" id="PoDjU/v#5yC2-0DU:rb,">
                           <mutation useid="false"></mutation>
                           <value name="OBJECTINPUT">
-                            <shadow type="objectList" id="W$B}QYH$Ishd}X3tcYcL">
+                            <shadow type="objectList" id="?%_op%}WMs9$fbrS*0u1">
                               <field name="FIELDNAME">Cube.101</field>
                             </shadow>
                           </value>
                         </block>
                       </value>
                       <value name="FROM">
-                        <shadow type="math_number" id="!S?Kl|^;XkM,NDU/K)+F">
+                        <shadow type="math_number" id="6je~xJ_4_8-zX;Qq7([b">
                           <field name="NUM">1</field>
                         </shadow>
                       </value>
                       <value name="TO">
-                        <shadow type="math_number" id="YGn;.O*czKdJd(|~PdPT">
+                        <shadow type="math_number" id="C5^l!eJBy9ir,quczDG4">
                           <field name="NUM">50</field>
                         </shadow>
                       </value>
                       <value name="SPEED">
-                        <shadow type="math_number" id="PNmOur8TZ[czO386gdkB">
-                          <field name="NUM">1</field>
+                        <shadow type="math_number" id="zFWsk8y2k(1ydHf1D9!m">
+                          <field name="NUM">4</field>
                         </shadow>
                       </value>
-                      <statement name="DO">
-                        <block type="variables_set" id="kh^$wi.4oqH_h/gb)d;B">
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <value name="IF1">
+                <block type="logic_operation" id="0jW_u]8XAU)M;.#NemHf">
+                  <field name="OP">AND</field>
+                  <value name="A">
+                    <block type="logic_compare" id="4Yw+3iFSM5yk$rM46M^P">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="[1j3q[@eTxx#KH~`-kx3">
                           <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
-                          <value name="VALUE">
-                            <block type="logic_boolean" id="ooDzTTmdj(:$jswKLaFB">
-                              <field name="BOOL">FALSE</field>
-                            </block>
-                          </value>
                         </block>
-                      </statement>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="]M*+4^I^}Ah6M|F~NO-_">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_compare" id="c%SjIz*5.zJ:4NMxS:Z9">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="y6p6_QYPOJbPt1FM{./8">
+                          <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="W#1~8.4kdcb!/lqwWz_{">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO1">
+                <block type="playAnimationAdv" id="Gh4uMpA1sG:TMkd=3m`3">
+                  <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="H)dzl,$2V(Jm_bR8m0EK">
+                      <mutation useid="false"></mutation>
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="W$B}QYH$Ishd}X3tcYcL">
+                          <field name="FIELDNAME">Cube.101</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="FROM">
+                    <shadow type="math_number" id="!S?Kl|^;XkM,NDU/K)+F">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="YGn;.O*czKdJd(|~PdPT">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="PNmOur8TZ[czO386gdkB">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="kh^$wi.4oqH_h/gb)d;B">
+                      <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="ooDzTTmdj(:$jswKLaFB">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
                     </block>
                   </statement>
                 </block>
               </statement>
             </block>
-          </next>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block type="variables_set" id="sLBOYlT0k3jri,J5FH}." x="1170" y="350">
+      <field name="VAR" id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="*7H_U]9AyIn|a|Es8WOM">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+      <next>
+        <block type="whenClicked" id="2}P(i=,YXoRS6kwiFkOz" inline="false">
+          <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="%#HMbzF:VC]:M#Dy9bj~">
+              <field name="FIELDNAME">Cube.101</field>
+            </shadow>
+            <block type="groupList" id="(:E6!uka[C3u]m^)I-Z^">
+              <field name="FIELDNAME">Fan</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="controls_if" id="=/z/LI?3reX0H-)d!ii?">
+              <mutation elseif="1"></mutation>
+              <value name="IF0">
+                <block type="logic_compare" id="]1`sB@E8}SasY|-RY[7{">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id=";^8)vmvhnF}D-bwH$7-?">
+                      <field name="VAR" id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="Hc$f8/Y@A4ibTU0u$i^`">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="variables_set" id="oMNG+^?]sp;i}1F%GJ2g">
+                  <field name="VAR" id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="dIhEtyx=Z2O77[W[2^Kr">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="/~4lh8-@Q*eByVuUD.4g">
+                      <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                          <field name="FIELDNAME">Fan</field>
+                        </shadow>
+                      </value>
+                      <value name="FROM">
+                        <shadow type="math_number" id="_#VFqJ^US?8JPMLo8|=Q">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <value name="TO">
+                        <shadow type="math_number" id="obfRNrJC/8i-e^[%D,rq">
+                          <field name="NUM">50</field>
+                        </shadow>
+                      </value>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="{s?H?_2bS3Gii1.Kn![Y">
+                          <field name="NUM">3</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <value name="IF1">
+                <block type="logic_operation" id="JP?P%#]9n#k(H;8O~F%9">
+                  <field name="OP">AND</field>
+                  <value name="A">
+                    <block type="logic_compare" id=".g^5Y`X}@vqK1!y{)UAH">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="Rf;W2daoR8Hd=klis?m[">
+                          <field name="VAR" id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="}+[ok*CQiA,[5^uVSDw2">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_compare" id="ucx%Z3@WH/rdW*n/!3~~">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id=";L4F}xj@d@qd/Op8OA2g">
+                          <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="%D!-FmNX0RriF*(SmB:7">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO1">
+                <block type="playAnimationAdv" id="qz-5ow:x6X.?A~)vq^po">
+                  <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="dLpnOSTnU$xM=?O[o/j)">
+                      <field name="FIELDNAME">Fan</field>
+                    </shadow>
+                  </value>
+                  <value name="FROM">
+                    <shadow type="math_number" id="]n0BipGmx{r2hF%v,7Y(">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="Buwn2Eky]rD+HvtW:zZ[">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="Ssw:Tuk+x34%lCCP!8Y`">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="nkOcQ.{)0B0f8CLr=53f">
+                      <field name="VAR" id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id=":/iV?Z5hE@UT$8So1XKU">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+            </block>
+          </statement>
         </block>
       </next>
     </block>
@@ -638,7 +762,7 @@
                       <field name="REVERSED">FALSE</field>
                       <field name="LOOP">LoopOnce</field>
                       <value name="VALUE">
-                        <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                        <shadow type="animationList" id="ScT)H)[O0]A5TId1-x~a">
                           <field name="FIELDNAME">&lt;none&gt;</field>
                         </shadow>
                         <block type="getAnimations" id="JIC}b)6~s1!3B0=FT[Kj">
@@ -690,7 +814,7 @@
                   <field name="REVERSED">TRUE</field>
                   <field name="LOOP">LoopOnce</field>
                   <value name="VALUE">
-                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                    <shadow type="animationList" id="=Ko`%i}1z0#98fX-;,pT">
                       <field name="FIELDNAME">&lt;none&gt;</field>
                     </shadow>
                     <block type="getAnimations" id="3pcn~]#1LwO*BNrZ).go">
@@ -734,156 +858,373 @@
         </block>
       </next>
     </block>
-    <block type="whenClicked" id="-TctpTLX$mfeamJ6!jD!" inline="false" x="1550" y="1130">
-      <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
-      <field name="X_RAY">FALSE</field>
-      <field name="DOUBLE_CLICK">FALSE</field>
-      <field name="LEFT_BUTTON">TRUE</field>
-      <field name="MIDDLE_BUTTON">TRUE</field>
-      <field name="RIGHT_BUTTON">TRUE</field>
+    <block type="variables_set" id="J|+C!6iY8OmbyLi)}wy%" x="1370" y="850">
+      <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
       <value name="VALUE">
-        <shadow type="objectList" id="EL,B5tX6IB9b@K#4rD02">
-          <field name="FIELDNAME">Cube.004</field>
-        </shadow>
+        <block type="logic_boolean" id="K.epQl9vrM..0[tGmR)L">
+          <field name="BOOL">FALSE</field>
+        </block>
       </value>
-      <statement name="DO">
-        <block type="playAnimationAdv" id="5E_4;y*FhC?kP-}thI`r">
-          <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
-          <field name="REVERSED">FALSE</field>
-          <field name="LOOP">LoopOnce</field>
+      <next>
+        <block type="whenClicked" id="-TctpTLX$mfeamJ6!jD!" inline="false">
+          <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
           <value name="VALUE">
-            <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
-              <field name="FIELDNAME">&lt;none&gt;</field>
-            </shadow>
-            <block type="getAnimations" id="7j%~mb*G=QC7x}Az8uir">
-              <mutation useid="false"></mutation>
-              <value name="OBJECTINPUT">
-                <shadow type="objectList" id="nXRB0_+PqbuiJ9Z:Q93Q">
-                  <field name="FIELDNAME">Cube.154</field>
-                </shadow>
-                <block type="groupList" id="cD_7C#~Uv47=T2|N}f|.">
-                  <field name="FIELDNAME">Ram</field>
-                </block>
-              </value>
-            </block>
-          </value>
-          <value name="FROM">
-            <shadow type="math_number" id="Gj-mN!T_B16hVbU/;)N}">
-              <field name="NUM">1</field>
-            </shadow>
-          </value>
-          <value name="TO">
-            <shadow type="math_number" id="CFv/6/v7!KttxRw`},A6">
-              <field name="NUM">50</field>
-            </shadow>
-          </value>
-          <value name="SPEED">
-            <shadow type="math_number" id="NbtmK|mP2k3r8iowG/E]">
-              <field name="NUM">1</field>
+            <shadow type="objectList" id="EL,B5tX6IB9b@K#4rD02">
+              <field name="FIELDNAME">Cube.004</field>
             </shadow>
           </value>
           <statement name="DO">
-            <block type="variables_set" id="ZjUrEVQMka/;^0z#9X7X">
-              <field name="VAR" id="6KY7UslK?s3[MmZ*X`hN">ramOut</field>
-              <value name="VALUE">
-                <block type="logic_boolean" id="(@a]aO`o.[E]c;#}ThY^">
-                  <field name="BOOL">TRUE</field>
-                </block>
-              </value>
-            </block>
-          </statement>
-          <next>
-            <block type="playAnimationAdv" id="|OimM;+Mwf;mn/O@@IJ~">
-              <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
-              <field name="REVERSED">FALSE</field>
-              <field name="LOOP">LoopOnce</field>
-              <value name="VALUE">
-                <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
-                  <field name="FIELDNAME">&lt;none&gt;</field>
-                </shadow>
-                <block type="getAnimations" id="FtqaBFmme#;;RosEQN|N">
-                  <mutation useid="false"></mutation>
-                  <value name="OBJECTINPUT">
-                    <shadow type="objectList" id="Px[BndW$g)t$5bz#$ZY_">
-                      <field name="FIELDNAME">Cube.154</field>
-                    </shadow>
+            <block type="controls_if" id="ud4t%IYicxb2CJ]ZGczz">
+              <mutation elseif="1"></mutation>
+              <value name="IF0">
+                <block type="logic_compare" id="/gF7Q4)O;;Huxi`w9ewH">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="4zG[Ak~((+(Qd_yW!pMo">
+                      <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
+                    </block>
                   </value>
-                </block>
-              </value>
-              <value name="FROM">
-                <shadow type="math_number" id="kI*|VF[UC[,Bjvbc*jM:">
-                  <field name="NUM">1</field>
-                </shadow>
-              </value>
-              <value name="TO">
-                <shadow type="math_number" id="yF,OZ_RX8]=:qACq2acr">
-                  <field name="NUM">50</field>
-                </shadow>
-              </value>
-              <value name="SPEED">
-                <shadow type="math_number" id="}9xt32$1id*Mgu,p#!p|">
-                  <field name="NUM">4</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="variables_set" id="j,LcaQ{{jN6$dt3o.Y@V">
-                  <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-                  <value name="VALUE">
-                    <block type="logic_boolean" id="3OeT35:{Pwi+60o/wVyY">
-                      <field name="BOOL">TRUE</field>
+                  <value name="B">
+                    <block type="logic_boolean" id="+7Jj71dJZE|oNK]s@Rap">
+                      <field name="BOOL">FALSE</field>
                     </block>
                   </value>
                 </block>
-              </statement>
-              <next>
-                <block type="playAnimationAdv" id="~6~{52IiN$L/6S0$-VPJ">
-                  <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
+              </value>
+              <statement name="DO0">
+                <block type="playAnimationAdv" id="5E_4;y*FhC?kP-}thI`r">
+                  <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
                   <field name="REVERSED">FALSE</field>
                   <field name="LOOP">LoopOnce</field>
                   <value name="VALUE">
-                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                    <shadow type="animationList" id=",L0KG4F`Bl1MUiyk5x]S">
                       <field name="FIELDNAME">&lt;none&gt;</field>
                     </shadow>
-                    <block type="getAnimations" id="7%{{.Xt.Z}cNUm;n{qsA">
+                    <block type="getAnimations" id="7j%~mb*G=QC7x}Az8uir">
                       <mutation useid="false"></mutation>
                       <value name="OBJECTINPUT">
-                        <shadow type="objectList" id="H1d/jK.UP*#=CmjA-rs6">
-                          <field name="FIELDNAME">Cube.101</field>
+                        <shadow type="objectList" id="nXRB0_+PqbuiJ9Z:Q93Q">
+                          <field name="FIELDNAME">Cube.154</field>
                         </shadow>
+                        <block type="groupList" id="cD_7C#~Uv47=T2|N}f|.">
+                          <field name="FIELDNAME">Ram</field>
+                        </block>
                       </value>
                     </block>
                   </value>
                   <value name="FROM">
-                    <shadow type="math_number" id="C7X`QDC_cCyg2I;D1d5s">
-                      <field name="NUM">1</field>
+                    <shadow type="math_number" id="Gj-mN!T_B16hVbU/;)N}">
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <value name="TO">
-                    <shadow type="math_number" id="8UusXufCrk4SLSHT.]gA">
+                    <shadow type="math_number" id="CFv/6/v7!KttxRw`},A6">
                       <field name="NUM">50</field>
                     </shadow>
                   </value>
                   <value name="SPEED">
-                    <shadow type="math_number" id="g?D%LIOSHX_acEX|C[RY">
+                    <shadow type="math_number" id="NbtmK|mP2k3r8iowG/E]">
                       <field name="NUM">1</field>
                     </shadow>
                   </value>
-                  <statement name="DO">
-                    <block type="variables_set" id="^YDwL}hg9i-r/al||^Q_">
-                      <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
+                  <next>
+                    <block type="playAnimationAdv" id="V+rl27zOakk1JBrm8RGO">
+                      <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
+                      <field name="LOOP">LoopOnce</field>
                       <value name="VALUE">
-                        <block type="logic_boolean" id="~CyBv@)X|i[!lDT4{k.E">
+                        <shadow type="animationList" id="OXVpZDJ{X*|2/9~wLWD_">
+                          <field name="FIELDNAME">Fan</field>
+                        </shadow>
+                      </value>
+                      <value name="FROM">
+                        <shadow type="math_number" id="GT*P|^RGv0W!(Vc6a/[,">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <value name="TO">
+                        <shadow type="math_number" id="x:tzddc8;}^FTZ[/n:x4">
+                          <field name="NUM">50</field>
+                        </shadow>
+                      </value>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="s[|pgGCW|v:WU(?LL*Tt">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="playAnimationAdv" id="GTw/v.L{pqUBeaZ5`l,H">
+                          <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                          <field name="REVERSED">FALSE</field>
+                          <field name="LOOP">LoopOnce</field>
+                          <value name="VALUE">
+                            <shadow type="animationList" id="mEr79vrvi4X{z{[UGLLN">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="getAnimations" id="{XICNDr]}0#%/KH0hOEQ">
+                              <mutation useid="false"></mutation>
+                              <value name="OBJECTINPUT">
+                                <shadow type="objectList" id="Q~nL|9mB9nHOZW?oUT)Z">
+                                  <field name="FIELDNAME">CPU-Cooler</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="FROM">
+                            <shadow type="math_number" id="T!]i[9LTKpk.XOo]`K6;">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <value name="TO">
+                            <shadow type="math_number" id="Hai(1#s2^V$J6B(|1TkT">
+                              <field name="NUM">50</field>
+                            </shadow>
+                          </value>
+                          <value name="SPEED">
+                            <shadow type="math_number" id="uea4mSspoAI~LEc^!NYo">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="playAnimationAdv" id="~6~{52IiN$L/6S0$-VPJ">
+                              <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                              <field name="REVERSED">FALSE</field>
+                              <field name="LOOP">LoopOnce</field>
+                              <value name="VALUE">
+                                <shadow type="animationList" id="ACqlm_v~%^M2BdXy_.a|">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="getAnimations" id="7%{{.Xt.Z}cNUm;n{qsA">
+                                  <mutation useid="false"></mutation>
+                                  <value name="OBJECTINPUT">
+                                    <shadow type="objectList" id="H1d/jK.UP*#=CmjA-rs6">
+                                      <field name="FIELDNAME">Cube.101</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="FROM">
+                                <shadow type="math_number" id="C7X`QDC_cCyg2I;D1d5s">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                              </value>
+                              <value name="TO">
+                                <shadow type="math_number" id="8UusXufCrk4SLSHT.]gA">
+                                  <field name="NUM">50</field>
+                                </shadow>
+                              </value>
+                              <value name="SPEED">
+                                <shadow type="math_number" id="g?D%LIOSHX_acEX|C[RY">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="Uni*v;gfd/iT|0Ab}OT^">
+                                  <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
+                                  <value name="VALUE">
+                                    <block type="logic_boolean" id="PE/~Qc0u=6{$JMXrw7GD">
+                                      <field name="BOOL">TRUE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <value name="IF1">
+                <block type="logic_operation" id="}`1Fb^vCcsXtf(R@AZ!8">
+                  <field name="OP">AND</field>
+                  <value name="A">
+                    <block type="logic_compare" id="R]lE=][(^5+wZR41(wkF">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="}lMfCT{w//YjsWJn#ODV">
+                          <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="sF[;]$yW{Z0l9xMRF,Qk">
                           <field name="BOOL">TRUE</field>
                         </block>
                       </value>
                     </block>
-                  </statement>
+                  </value>
+                  <value name="B">
+                    <block type="logic_compare" id="ei)c1%|E(s4.w@7$HM`F">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="C%eRL`^Q~9zfkZgy@TP]">
+                          <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id=":++..o,T_KcK`K,+{tBo">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
                 </block>
-              </next>
+              </value>
+              <statement name="DO1">
+                <block type="playAnimationAdv" id="+WcRDI1F4qEj98Wh4Z~~">
+                  <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="2j1,}_@35L2#Almd^_^@">
+                      <field name="FIELDNAME">Fan</field>
+                    </shadow>
+                  </value>
+                  <value name="FROM">
+                    <shadow type="math_number" id="/fQd0kxe6k].be)5Cf+7">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="sGgR[[7,XU)Uv*]kDR^f">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="lC!7_@CkD.dyNmw~DcK8">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="bHZF|A7J[t*:vO}^dC!v">
+                      <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">TRUE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="reQE(+OrMLk7YTjL*W,z">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="getAnimations" id="v=T:.=zUMP/2(Vb)Fme]">
+                          <mutation useid="false"></mutation>
+                          <value name="OBJECTINPUT">
+                            <shadow type="objectList" id="1$A++AK^Q0b:#kg[WSN!">
+                              <field name="FIELDNAME">CPU-Cooler</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="FROM">
+                        <shadow type="math_number" id="]_tA{YZN=t/bZQ8rYk*C">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <value name="TO">
+                        <shadow type="math_number" id="^t|sc{Cl?2Y$9lr,+^J4">
+                          <field name="NUM">50</field>
+                        </shadow>
+                      </value>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="B-Cv5n8t;8zpY:7[CR(r">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="playAnimationAdv" id="}ACJD=x;^#_~J~%?hz3V">
+                          <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                          <field name="REVERSED">TRUE</field>
+                          <field name="LOOP">LoopOnce</field>
+                          <value name="VALUE">
+                            <shadow type="animationList" id="}k1{F-L.OBugec#S_DNa">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="getAnimations" id="vR.JYe%sOnCsgFVzPwv{">
+                              <mutation useid="false"></mutation>
+                              <value name="OBJECTINPUT">
+                                <shadow type="objectList" id="y@],^[PmD;J#kbgK;qq]">
+                                  <field name="FIELDNAME">Cube.101</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="FROM">
+                            <shadow type="math_number" id="xEr9cW8fQ7k5zF5VSV)d">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <value name="TO">
+                            <shadow type="math_number" id="@/X$)!xX^r%J[E$=HbVr">
+                              <field name="NUM">50</field>
+                            </shadow>
+                          </value>
+                          <value name="SPEED">
+                            <shadow type="math_number" id="%F)wVhF!^W6TZ`-e4(DU">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="playAnimationAdv" id="E3^FOJ?;jguAi{BQI3|r">
+                              <mutation advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                              <field name="REVERSED">TRUE</field>
+                              <field name="LOOP">LoopOnce</field>
+                              <value name="VALUE">
+                                <shadow type="animationList" id="vt2gVq,1qS1]E!,e*!Bq">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="getAnimations" id="_I%fCYtJ1s]scz!)2dj!">
+                                  <mutation useid="false"></mutation>
+                                  <value name="OBJECTINPUT">
+                                    <shadow type="objectList" id="CC!VrcS-hXqm}X|3X@Aa">
+                                      <field name="FIELDNAME">Cube.154</field>
+                                    </shadow>
+                                    <block type="groupList" id="J4;|}4PL/_/!k65/`LX_">
+                                      <field name="FIELDNAME">Ram</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="FROM">
+                                <shadow type="math_number" id="c(4N5]Z1@9w2^VR2igd^">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                              </value>
+                              <value name="TO">
+                                <shadow type="math_number" id="QFaXq0$Iyp.;7zJM.n};">
+                                  <field name="NUM">50</field>
+                                </shadow>
+                              </value>
+                              <value name="SPEED">
+                                <shadow type="math_number" id="~N;`i#Es*=)/RpEQ^3fi">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="E:[:RQ(8cY4w*8+^~JPI">
+                                  <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
+                                  <value name="VALUE">
+                                    <block type="logic_boolean" id="4u1*S#:WKI!nhNSeO51d">
+                                      <field name="BOOL">FALSE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
             </block>
-          </next>
+          </statement>
         </block>
-      </statement>
+      </next>
     </block>
     <block type="variables_set" id="FA9)[st+N4Cf]r`iT9)z" x="348" y="1265">
       <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
@@ -940,7 +1281,7 @@
                       <field name="REVERSED">FALSE</field>
                       <field name="LOOP">LoopOnce</field>
                       <value name="VALUE">
-                        <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                        <shadow type="animationList" id="mEr79vrvi4X{z{[UGLLN">
                           <field name="FIELDNAME">&lt;none&gt;</field>
                         </shadow>
                         <block type="getAnimations" id="EgiEwdYT_OPp~k#@7l=S">
@@ -1012,7 +1353,7 @@
                   <field name="REVERSED">TRUE</field>
                   <field name="LOOP">LoopOnce</field>
                   <value name="VALUE">
-                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                    <shadow type="animationList" id="reQE(+OrMLk7YTjL*W,z">
                       <field name="FIELDNAME">&lt;none&gt;</field>
                     </shadow>
                     <block type="getAnimations" id="j2(GQ@]XSllr%AQy:Ccr">
