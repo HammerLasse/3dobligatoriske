@@ -1,4 +1,4 @@
-Step 1: Lav en ny Verge3D app i Verge3D
+Step 1: Lav en ny Verge3D app i Verge3D som hedder "3dpcapp" **VIGTIGT!!!!!!!!!!!!!!!!!!!!!!**
 
 Step 2: Åbn den nye apps folder
 
