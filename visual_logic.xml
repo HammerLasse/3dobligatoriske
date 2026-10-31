@@ -1,13 +1,13 @@
 <xml xmlns="https://www.soft8soft.com/puzzles/xml">
   <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
-  <tab name="Main" type="CommonTab" active="true" scrollx="-525.068757107264" scrolly="-254.33159121281028" scale="0.6935539619171466">
+  <tab name="Main" type="CommonTab" active="true" scrollx="-93.81074458009425" scrolly="-544.6128800119538" scale="0.7740271241464982">
     <variables>
       <variable id="6KY7UslK?s3[MmZ*X`hN">ramOut</variable>
       <variable id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</variable>
       <variable id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</variable>
       <variable id="8XpwY}XDlfeYz9N|=+G=">moboOut</variable>
       <variable id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</variable>
-      <variable id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</variable>
+      <variable id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</variable>
       <variable id="hqwVu:*+{u~38Z:#GbNH">panelOpen</variable>
     </variables>
     <block type="variables_set" id="#*]bRJkc5+R!=:.t2+$?" x="170" y="-290">
@@ -92,7 +92,7 @@
                       </value>
                       <value name="SPEED">
                         <shadow type="math_number" id="13P_NIVQDGb6S6%,Qp}9">
-                          <field name="NUM">1</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -167,7 +167,7 @@
                   </value>
                   <value name="SPEED">
                     <shadow type="math_number" id="%R+68`2#nh8:_!,lvu5F">
-                      <field name="NUM">1</field>
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
@@ -253,7 +253,7 @@
                           </value>
                           <value name="SPEED">
                             <shadow type="math_number" id="F5vYUam+O#c3~6GcJl@Q">
-                              <field name="NUM">1</field>
+                              <field name="NUM">2</field>
                             </shadow>
                           </value>
                           <statement name="DO">
@@ -313,7 +313,7 @@
                           </value>
                           <value name="SPEED">
                             <shadow type="math_number" id="N%PX)zL`hI}tkr8Hq(sK">
-                              <field name="NUM">1</field>
+                              <field name="NUM">2</field>
                             </shadow>
                           </value>
                           <statement name="DO">
@@ -413,7 +413,7 @@
                       </value>
                       <value name="SPEED">
                         <shadow type="math_number" id="zFWsk8y2k(1ydHf1D9!m">
-                          <field name="NUM">4</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -485,7 +485,7 @@
                   </value>
                   <value name="SPEED">
                     <shadow type="math_number" id="PNmOur8TZ[czO386gdkB">
-                      <field name="NUM">1</field>
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
@@ -576,7 +576,7 @@
                       </value>
                       <value name="SPEED">
                         <shadow type="math_number" id="{s?H?_2bS3Gii1.Kn![Y">
-                          <field name="NUM">3</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -640,7 +640,7 @@
                   </value>
                   <value name="SPEED">
                     <shadow type="math_number" id="Ssw:Tuk+x34%lCCP!8Y`">
-                      <field name="NUM">3</field>
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
@@ -684,64 +684,84 @@
             <block type="controls_if" id="dqOiG;3rwaI1@Ww0O0Nx">
               <mutation elseif="1"></mutation>
               <value name="IF0">
-                <block type="logic_operation" id="L[Y7$K/JQRxdD-,VY%S[">
+                <block type="logic_operation" id="uR8B,ppz?NDPX@iSU-Ge">
                   <field name="OP">AND</field>
                   <value name="A">
-                    <block type="logic_compare" id="$A:S0}b]sj~aM|Zb(,R*">
+                    <block type="logic_compare" id="vwadg7suXGe@sDv?{E}I">
                       <field name="OP">EQ</field>
                       <value name="A">
-                        <block type="variables_get" id="RzCKbMygf/}b3E0#}bbX">
-                          <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
+                        <block type="variables_get" id="K{vVywwDr.Q1eO:ZeR+N">
+                          <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
                         </block>
                       </value>
                       <value name="B">
-                        <block type="logic_boolean" id="[G}3!#0fDv@hh@q@I_Jv">
+                        <block type="logic_boolean" id="k!;$-*~xNg|{i7sH:%04">
                           <field name="BOOL">TRUE</field>
                         </block>
                       </value>
                     </block>
                   </value>
                   <value name="B">
-                    <block type="logic_compare" id="|1X6}.(T~e#8UL/H#j}R">
-                      <field name="OP">EQ</field>
+                    <block type="logic_operation" id="L[Y7$K/JQRxdD-,VY%S[">
+                      <field name="OP">AND</field>
                       <value name="A">
-                        <block type="logic_operation" id="p;1CScTxRf0_/0cMs8Ex">
-                          <field name="OP">AND</field>
+                        <block type="logic_compare" id="$A:S0}b]sj~aM|Zb(,R*">
+                          <field name="OP">EQ</field>
                           <value name="A">
-                            <block type="logic_compare" id="rqRQ~G:5}7225HqNveqT">
-                              <field name="OP">EQ</field>
-                              <value name="A">
-                                <block type="variables_get" id="vqwe,WHf+_0mAjW^dUG=">
-                                  <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
-                                </block>
-                              </value>
-                              <value name="B">
-                                <block type="logic_boolean" id="8L3ix7{vo6vw?Y{,r0EN">
-                                  <field name="BOOL">FALSE</field>
-                                </block>
-                              </value>
+                            <block type="variables_get" id="RzCKbMygf/}b3E0#}bbX">
+                              <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
                             </block>
                           </value>
                           <value name="B">
-                            <block type="logic_compare" id="t]/qhQBVJ.KtIn+Y?Gkn">
-                              <field name="OP">EQ</field>
-                              <value name="A">
-                                <block type="variables_get" id="HcF2r^S+,g:,gBX6ZKd8">
-                                  <field name="VAR" id="6KY7UslK?s3[MmZ*X`hN">ramOut</field>
-                                </block>
-                              </value>
-                              <value name="B">
-                                <block type="logic_boolean" id="geyrKR,:t^Hqaq8.A8W9">
-                                  <field name="BOOL">TRUE</field>
-                                </block>
-                              </value>
+                            <block type="logic_boolean" id="[G}3!#0fDv@hh@q@I_Jv">
+                              <field name="BOOL">TRUE</field>
                             </block>
                           </value>
                         </block>
                       </value>
                       <value name="B">
-                        <block type="logic_boolean" id="%HU32.GiN^a[8WZBsH(L">
-                          <field name="BOOL">TRUE</field>
+                        <block type="logic_compare" id="|1X6}.(T~e#8UL/H#j}R">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="logic_operation" id="p;1CScTxRf0_/0cMs8Ex">
+                              <field name="OP">AND</field>
+                              <value name="A">
+                                <block type="logic_compare" id="rqRQ~G:5}7225HqNveqT">
+                                  <field name="OP">EQ</field>
+                                  <value name="A">
+                                    <block type="variables_get" id="vqwe,WHf+_0mAjW^dUG=">
+                                      <field name="VAR" id="8XpwY}XDlfeYz9N|=+G=">moboOut</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <block type="logic_boolean" id="8L3ix7{vo6vw?Y{,r0EN">
+                                      <field name="BOOL">FALSE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="logic_compare" id="t]/qhQBVJ.KtIn+Y?Gkn">
+                                  <field name="OP">EQ</field>
+                                  <value name="A">
+                                    <block type="variables_get" id="HcF2r^S+,g:,gBX6ZKd8">
+                                      <field name="VAR" id="6KY7UslK?s3[MmZ*X`hN">ramOut</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <block type="logic_boolean" id="geyrKR,:t^Hqaq8.A8W9">
+                                      <field name="BOOL">TRUE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="logic_boolean" id="%HU32.GiN^a[8WZBsH(L">
+                              <field name="BOOL">TRUE</field>
+                            </block>
+                          </value>
                         </block>
                       </value>
                     </block>
@@ -786,7 +806,7 @@
                       </value>
                       <value name="SPEED">
                         <shadow type="math_number" id=";Ai,r5dYORRk^5a+ne?U">
-                          <field name="NUM">1</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -838,7 +858,7 @@
                   </value>
                   <value name="SPEED">
                     <shadow type="math_number" id="={-sPVG$A$x;O``Z]o`V">
-                      <field name="NUM">1</field>
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
@@ -858,7 +878,7 @@
         </block>
       </next>
     </block>
-    <block type="variables_set" id="J|+C!6iY8OmbyLi)}wy%" x="1370" y="850">
+    <block type="variables_set" id="J|+C!6iY8OmbyLi)}wy%" x="1710" y="810">
       <field name="VAR" id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</field>
       <value name="VALUE">
         <block type="logic_boolean" id="K.epQl9vrM..0[tGmR)L">
@@ -1227,7 +1247,7 @@
       </next>
     </block>
     <block type="variables_set" id="FA9)[st+N4Cf]r`iT9)z" x="348" y="1265">
-      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
+      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
       <value name="VALUE">
         <block type="logic_boolean" id="Q$c%X[=*I]/Rf!8$(dHz">
           <field name="BOOL">FALSE</field>
@@ -1257,7 +1277,7 @@
                   <field name="OP">EQ</field>
                   <value name="A">
                     <block type="variables_get" id="Sfxkyy5,(|/PYeGnAn`,">
-                      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
+                      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
                     </block>
                   </value>
                   <value name="B">
@@ -1269,7 +1289,7 @@
               </value>
               <statement name="DO0">
                 <block type="variables_set" id="T!7O%3=O2(IM7(eDdpaH">
-                  <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
+                  <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
                   <value name="VALUE">
                     <block type="logic_boolean" id="^.oWqvPut,G7}-A!3tb|">
                       <field name="BOOL">TRUE</field>
@@ -1305,7 +1325,7 @@
                       </value>
                       <value name="SPEED">
                         <shadow type="math_number" id="ZUv1IYH2[ZUG;wRbG^xh">
-                          <field name="NUM">1</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -1320,7 +1340,7 @@
                       <field name="OP">EQ</field>
                       <value name="A">
                         <block type="variables_get" id="@$L!qh;MiyF/{*vpLn96">
-                          <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
+                          <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
                         </block>
                       </value>
                       <value name="B">
@@ -1377,12 +1397,12 @@
                   </value>
                   <value name="SPEED">
                     <shadow type="math_number" id="=Br^Zlm`;QNIdjCBUj`:">
-                      <field name="NUM">1</field>
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
                     <block type="variables_set" id="OEx_K)#+ltJ$iOtK}fc$">
-                      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCooler</field>
+                      <field name="VAR" id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</field>
                       <value name="VALUE">
                         <block type="logic_boolean" id="^1+a56k9UAhSf6J;6`%,">
                           <field name="BOOL">FALSE</field>
