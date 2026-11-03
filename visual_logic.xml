@@ -1,6 +1,6 @@
 <xml xmlns="https://www.soft8soft.com/puzzles/xml">
-  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
-  <tab name="Main" type="CommonTab" active="true" scrollx="-93.81074458009425" scrolly="-544.6128800119538" scale="0.7740271241464982">
+  <tab name="Init" type="InitTab" active="false" scrollx="9.22225568936392" scrolly="0" scale="0.9222255689363639"></tab>
+  <tab name="Main" type="CommonTab" active="true" scrollx="281.0326134042689" scrolly="483.353900153867" scale="0.6762949393072257">
     <variables>
       <variable id="6KY7UslK?s3[MmZ*X`hN">ramOut</variable>
       <variable id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</variable>
@@ -9,8 +9,10 @@
       <variable id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</variable>
       <variable id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</variable>
       <variable id="hqwVu:*+{u~38Z:#GbNH">panelOpen</variable>
+      <variable id="}vi,LeGF0Ey8lU!TIn`r">i</variable>
+      <variable id="2{;Vtsjn}#zoq;*.*;Yc">annotations</variable>
     </variables>
-    <block type="variables_set" id="#*]bRJkc5+R!=:.t2+$?" x="170" y="-290">
+    <block type="variables_set" id="#*]bRJkc5+R!=:.t2+$?" x="110" y="-630">
       <field name="VAR" id="6KY7UslK?s3[MmZ*X`hN">ramOut</field>
       <value name="VALUE">
         <block type="logic_boolean" id="67#!hv{SoSJv7{|Bx1SN">
@@ -184,160 +186,219 @@
               </statement>
             </block>
           </statement>
-          <next>
-            <block type="variables_set" id="WWRM*gaX)r-32VNZvQn!">
-              <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-              <value name="VALUE">
-                <block type="logic_boolean" id="iG}Ayu}b5b5mX+rOU2@s">
-                  <field name="BOOL">FALSE</field>
+        </block>
+      </next>
+    </block>
+    <block type="variables_set" id="WWRM*gaX)r-32VNZvQn!" x="110" y="-270">
+      <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="iG}Ayu}b5b5mX+rOU2@s">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+      <next>
+        <block type="whenClicked" id="o:}@KQo_%{F8%_.YHEEu" inline="false">
+          <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="HH8EGwZu^$f0k9/kh4Tn">
+              <field name="FIELDNAME">Cube.154</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="controls_if" id="+!`Z^O^6*ENk1-Df!0t?">
+              <mutation elseif="1"></mutation>
+              <value name="IF0">
+                <block type="logic_compare" id="rkUTZ@BXj0=d):xz;nOi">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="?e5z$CY=u#D;ZbT0GPKO">
+                      <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="A9-4o1xv.I-a;PWMSKHA">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
                 </block>
               </value>
-              <next>
-                <block type="whenClicked" id="o:}@KQo_%{F8%_.YHEEu" inline="false">
-                  <mutation adveventoptions="false" enableifmissed="false" useid="false"></mutation>
-                  <field name="X_RAY">FALSE</field>
-                  <field name="DOUBLE_CLICK">FALSE</field>
-                  <field name="LEFT_BUTTON">TRUE</field>
-                  <field name="MIDDLE_BUTTON">TRUE</field>
-                  <field name="RIGHT_BUTTON">TRUE</field>
+              <statement name="DO0">
+                <block type="playAnimationAdv" id="SgIMP7(|ksK6gdW`nf|Q">
+                  <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
                   <value name="VALUE">
-                    <shadow type="objectList" id="HH8EGwZu^$f0k9/kh4Tn">
-                      <field name="FIELDNAME">Cube.154</field>
+                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="g};Q`?0ec_p{A$;SA3m~">
+                      <mutation useid="false"></mutation>
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="B,v1qtI_1%n-6#[f}/BF">
+                          <field name="FIELDNAME">Cube.154</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="FROM">
+                    <shadow type="math_number" id="u{f.`4dFc{r~P!CI{hs{">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="=l2~WG?0MZGw5O@+F]ER">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="F5vYUam+O#c3~6GcJl@Q">
+                      <field name="NUM">2</field>
                     </shadow>
                   </value>
                   <statement name="DO">
-                    <block type="controls_if" id="+!`Z^O^6*ENk1-Df!0t?">
-                      <mutation elseif="1"></mutation>
-                      <value name="IF0">
-                        <block type="logic_compare" id="rkUTZ@BXj0=d):xz;nOi">
-                          <field name="OP">EQ</field>
-                          <value name="A">
-                            <block type="variables_get" id="?e5z$CY=u#D;ZbT0GPKO">
-                              <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-                            </block>
-                          </value>
-                          <value name="B">
-                            <block type="logic_boolean" id="A9-4o1xv.I-a;PWMSKHA">
-                              <field name="BOOL">FALSE</field>
-                            </block>
-                          </value>
+                    <block type="controls_forEach" id="o3hpX@vp;?Z5wkVj|y$e">
+                      <field name="VAR" id="}vi,LeGF0Ey8lU!TIn`r">i</field>
+                      <value name="LIST">
+                        <block type="variables_get" id="pR__-i+7Bx@PB.5L]8]^">
+                          <field name="VAR" id="2{;Vtsjn}#zoq;*.*;Yc">annotations</field>
                         </block>
                       </value>
-                      <statement name="DO0">
-                        <block type="playAnimationAdv" id="SgIMP7(|ksK6gdW`nf|Q">
-                          <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
-                          <field name="REVERSED">FALSE</field>
-                          <field name="LOOP">LoopOnce</field>
+                      <statement name="DO">
+                        <block type="setHTMLElemStyle" id="!4`Repf{sxtnpPQ;G|ds">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
                           <value name="VALUE">
-                            <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
-                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            <shadow type="displayDropdown" id="A)aJ}-iKcu3)y[HKPj2^">
+                              <field name="TEXT">block</field>
                             </shadow>
-                            <block type="getAnimations" id="g};Q`?0ec_p{A$;SA3m~">
-                              <mutation useid="false"></mutation>
-                              <value name="OBJECTINPUT">
-                                <shadow type="objectList" id="B,v1qtI_1%n-6#[f}/BF">
-                                  <field name="FIELDNAME">Cube.154</field>
-                                </shadow>
-                              </value>
+                            <block type="text" id="6k1GU5@Wf,Q5ua8JfXXq">
+                              <field name="TEXT"></field>
                             </block>
                           </value>
-                          <value name="FROM">
-                            <shadow type="math_number" id="u{f.`4dFc{r~P!CI{hs{">
-                              <field name="NUM">1</field>
+                          <value name="ID">
+                            <shadow type="text" id="YYpU?-ycIA,K3JQ-0-wn">
+                              <field name="TEXT">i</field>
                             </shadow>
-                          </value>
-                          <value name="TO">
-                            <shadow type="math_number" id="=l2~WG?0MZGw5O@+F]ER">
-                              <field name="NUM">50</field>
-                            </shadow>
-                          </value>
-                          <value name="SPEED">
-                            <shadow type="math_number" id="F5vYUam+O#c3~6GcJl@Q">
-                              <field name="NUM">2</field>
-                            </shadow>
-                          </value>
-                          <statement name="DO">
-                            <block type="variables_set" id="r6-rAB+^PY=leX=ucHoS">
-                              <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-                              <value name="VALUE">
-                                <block type="logic_boolean" id="nuW1#mz$;0-qEQYT_b/I">
-                                  <field name="BOOL">TRUE</field>
-                                </block>
-                              </value>
+                            <block type="variables_get" id="xZrrM,ib[//WTGVrSat`">
+                              <field name="VAR" id="}vi,LeGF0Ey8lU!TIn`r">i</field>
                             </block>
-                          </statement>
+                          </value>
                         </block>
                       </statement>
-                      <value name="IF1">
-                        <block type="logic_compare" id="r]eLZWUhT~v](4[efA)I">
-                          <field name="OP">EQ</field>
-                          <value name="A">
-                            <block type="variables_get" id="R,:F-sHmmxti8*-K2nTj">
-                              <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-                            </block>
-                          </value>
-                          <value name="B">
-                            <block type="logic_boolean" id="mB^/oXIO!.~Iz3dG^{Am">
+                      <next>
+                        <block type="variables_set" id="r6-rAB+^PY=leX=ucHoS">
+                          <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="nuW1#mz$;0-qEQYT_b/I">
                               <field name="BOOL">TRUE</field>
                             </block>
                           </value>
                         </block>
-                      </value>
-                      <statement name="DO1">
-                        <block type="playAnimationAdv" id="0P0U%w-jsFw14D[[eltk">
-                          <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
-                          <field name="REVERSED">TRUE</field>
-                          <field name="LOOP">LoopOnce</field>
-                          <value name="VALUE">
-                            <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
-                              <field name="FIELDNAME">&lt;none&gt;</field>
-                            </shadow>
-                            <block type="getAnimations" id="iF[~6C=+GnURe_b8wY,`">
-                              <mutation useid="false"></mutation>
-                              <value name="OBJECTINPUT">
-                                <shadow type="objectList" id="8CgE-M5[H~a5gTk61_8{">
-                                  <field name="FIELDNAME">Cube.154</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </value>
-                          <value name="FROM">
-                            <shadow type="math_number" id="oN/D9@;4xruv[k9F6pAM">
-                              <field name="NUM">1</field>
-                            </shadow>
-                          </value>
-                          <value name="TO">
-                            <shadow type="math_number" id="?(dowsNJuoAiT;@V8}#2">
-                              <field name="NUM">50</field>
-                            </shadow>
-                          </value>
-                          <value name="SPEED">
-                            <shadow type="math_number" id="N%PX)zL`hI}tkr8Hq(sK">
-                              <field name="NUM">2</field>
-                            </shadow>
-                          </value>
-                          <statement name="DO">
-                            <block type="variables_set" id="[7$[vW4(~bH6u71ev{pK">
-                              <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
-                              <value name="VALUE">
-                                <block type="logic_boolean" id="/TCerlkQIiO#Y.OfZ)WG">
-                                  <field name="BOOL">FALSE</field>
-                                </block>
-                              </value>
-                            </block>
-                          </statement>
-                        </block>
-                      </statement>
+                      </next>
                     </block>
                   </statement>
                 </block>
-              </next>
+              </statement>
+              <value name="IF1">
+                <block type="logic_compare" id="r]eLZWUhT~v](4[efA)I">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="R,:F-sHmmxti8*-K2nTj">
+                      <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="mB^/oXIO!.~Iz3dG^{Am">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO1">
+                <block type="playAnimationAdv" id="0P0U%w-jsFw14D[[eltk">
+                  <mutation advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="%2C-Y(4+f;MQ1|5RUTt=">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="iF[~6C=+GnURe_b8wY,`">
+                      <mutation useid="false"></mutation>
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="8CgE-M5[H~a5gTk61_8{">
+                          <field name="FIELDNAME">Cube.154</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="FROM">
+                    <shadow type="math_number" id="oN/D9@;4xruv[k9F6pAM">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="?(dowsNJuoAiT;@V8}#2">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="N%PX)zL`hI}tkr8Hq(sK">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="controls_forEach" id="=o7p3~zu0rB:b8pq)HWc">
+                      <field name="VAR" id="}vi,LeGF0Ey8lU!TIn`r">i</field>
+                      <value name="LIST">
+                        <block type="variables_get" id="o83$[#-Gb,y~m~W{YK6=">
+                          <field name="VAR" id="2{;Vtsjn}#zoq;*.*;Yc">annotations</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="setHTMLElemStyle" id="0G=P!rZiKGqy[i3KRCNR">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="displayDropdown" id="B!/4hwiql):~3Xm+_bE,">
+                              <field name="TEXT">none</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="9{$fu).RjY8r3pc0uR4^">
+                              <field name="TEXT">i</field>
+                            </shadow>
+                            <block type="variables_get" id="|t;K-+ENWIoo#KzfL1P;">
+                              <field name="VAR" id="}vi,LeGF0Ey8lU!TIn`r">i</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="variables_set" id="[7$[vW4(~bH6u71ev{pK">
+                          <field name="VAR" id="hqwVu:*+{u~38Z:#GbNH">panelOpen</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="/TCerlkQIiO#Y.OfZ)WG">
+                              <field name="BOOL">FALSE</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
             </block>
-          </next>
+          </statement>
         </block>
       </next>
     </block>
-    <block type="variables_set" id="hv)B[n4pPeIRod#T2{n9" x="110" y="370">
+    <block type="variables_set" id="hv)B[n4pPeIRod#T2{n9" x="110" y="390">
       <field name="VAR" id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</field>
       <value name="VALUE">
         <block type="logic_boolean" id="!wF1#){4NXiFn0Tc,~Yg">
@@ -1418,5 +1479,371 @@
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="1075.1999999999998" viewport-y="37" viewport-w="728.8" viewport-h="441.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <tab name="Annotations" type="CommonTab" active="false" scrollx="177.0524042671168" scrolly="72.95502576997387" scale="0.5503695207252172">
+    <variables>
+      <variable id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</variable>
+      <variable id="2{;Vtsjn}#zoq;*.*;Yc">annotations</variable>
+    </variables>
+    <block type="addAnnotation" id="qHB2^CLR^cn-|iQ$,J-D" x="470" y="90">
+      <mutation usenameslot="false"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id="-2ea0p7IK@jTk_#AC?Cc">
+          <field name="TEXT">6</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="V/F%_p09d8t^qx;#^Rgk">
+          <field name="FIELDNAME">Side_panel_annotation</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="e6+.HwbCvgsUM{??7+V#">
+          <field name="TEXT">Side panel</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id=":[=KUm+bMUfJgB_1a];l">
+          <field name="TEXT">an_6</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="addAnnotation" id="}g/d)Z1a(RqIf-YY=s/Z">
+          <mutation usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="1zD%?%/Uk.OS(:0UjXau">
+              <field name="TEXT">1</field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="xCUQ7xoSlp;=mCRNC|9j">
+              <field name="FIELDNAME">CPU_annotation</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="D0(p6#^fb4xrcP:7FGaW">
+              <field name="TEXT">CPU/CPU-COOLER</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="EYtFNPOh#;ax-mJ6..d-">
+              <field name="TEXT">an_1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="addAnnotation" id="wiJs]WVnndF#pGh{#KC1">
+              <mutation usenameslot="false"></mutation>
+              <value name="ANNOTATION">
+                <shadow type="text" id="}BMJQ/}4BL`k8Qk*ac7q">
+                  <field name="TEXT">2</field>
+                </shadow>
+              </value>
+              <value name="TARGET">
+                <shadow type="objectList" id="Lgsr[Nq!C0X_jtOUgSf`">
+                  <field name="FIELDNAME">Fan_annotation</field>
+                </shadow>
+              </value>
+              <value name="CONTENTS">
+                <shadow type="text" id="@s!Xyw:|,b@IAI.l!@7:">
+                  <field name="TEXT">Fan</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="W?.:grtgz,`mj[UMG3F!">
+                  <field name="TEXT">an_2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="addAnnotation" id=";Hy%Hv5Ui/P:|s~#`9C6">
+                  <mutation usenameslot="false"></mutation>
+                  <value name="ANNOTATION">
+                    <shadow type="text" id="yH|{P@kB[uVx8/]=sU{;">
+                      <field name="TEXT">3</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="vx8id6@,QCokzCZT,5)r">
+                      <field name="FIELDNAME">GPU_annotation</field>
+                    </shadow>
+                  </value>
+                  <value name="CONTENTS">
+                    <shadow type="text" id="WkNm@S+[Ui;vK(|pV|ET">
+                      <field name="TEXT">GPU</field>
+                    </shadow>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="pc%7Pa=@L^2T/;l`{fOG">
+                      <field name="TEXT">an_3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="[,JF+eH9-ME![oR5[?9o">
+                      <mutation usenameslot="false"></mutation>
+                      <value name="ANNOTATION">
+                        <shadow type="text" id=",o::cGy[y!S9u-Q{1*jg">
+                          <field name="TEXT">4</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="[EI6qr7ViNF)_z3}tq{M">
+                          <field name="FIELDNAME">Ram_annotation</field>
+                        </shadow>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id=";gC}mb]aE+FGTtP9I~3H">
+                          <field name="TEXT">RAM</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="AvXu2*_iA5D/7FDmC3xg">
+                          <field name="TEXT">an_4</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id="l_0El@{]P+/?#mR/eq8o">
+                          <mutation usenameslot="false"></mutation>
+                          <value name="ANNOTATION">
+                            <shadow type="text" id=":H)dX7ilmHLh)q/$(NzD">
+                              <field name="TEXT">5</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="P.e38fh_Gv,d;oI{]cxO">
+                              <field name="FIELDNAME">Mobo_annotation</field>
+                            </shadow>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id="MnR3E!]?E^PsHw0)q3lb">
+                              <field name="TEXT">Motherboard</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="xJ#E`@Qw@g=u*S=](l@k">
+                              <field name="TEXT">an_5</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="*N$VM[JyNBLgmbBr@S9Q">
+                              <field name="VAR" id="2{;Vtsjn}#zoq;*.*;Yc">annotations</field>
+                              <value name="VALUE">
+                                <block type="lists_create_with" id=";2O|v/(p[5]Gxi0KAP@.">
+                                  <mutation items="5"></mutation>
+                                  <value name="ADD0">
+                                    <block type="text" id="_#35onQB~wAwuvPYMA7g">
+                                      <field name="TEXT">an_1</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="text" id="rnR#GALty(80K]$=@F27">
+                                      <field name="TEXT">an_2</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="text" id="52H,k%[*1i|*=a!Kt=P=">
+                                      <field name="TEXT">an_3</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD3">
+                                    <block type="text" id="^A0[Z5l!~|3E60:X)80`">
+                                      <field name="TEXT">an_4</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD4">
+                                    <block type="text" id=")?Cg/CUu@aWP2cHGc-ry">
+                                      <field name="TEXT">an_5</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setHTMLElemStyle" id="T9M4-fume0+U%%O7MVp2">
+                                  <field name="PROPERTY">display</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <shadow type="displayDropdown" id="`0Qg0jPd)yaaIM2-5`;f">
+                                      <field name="TEXT">none</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="+`=,b|X,p84D[,(eybir">
+                                      <field name="TEXT">myElem</field>
+                                    </shadow>
+                                    <block type="variables_get" id="YYP0yZ4P?~B@IUZ;;TM^">
+                                      <field name="VAR" id="2{;Vtsjn}#zoq;*.*;Yc">annotations</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block type="variables_set" id="|ZQ/xqP9WG/TCn.Hw~r~" x="470" y="550">
+      <field name="VAR" id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="$I8(`q1[fd9VLuU3Lini">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+    </block>
+    <block type="eventHTMLElem" id="IN6L,`:UmM^O:v8ZIIGs" x="450" y="630">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="~ykjZjN5v[+fyB3IpUG[">
+          <field name="TEXT">myElem</field>
+        </shadow>
+        <block type="text" id="P623;8RtO4O^d_yli@!D">
+          <field name="TEXT">indsæt id på knap til at skjule alle annotations</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="Y9/]sU3C2u${%y16q$~!">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare" id="/ql*,6|zFt8OkN,eZiWI">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="`-0clg,JAzDZ8Z3CtV-p">
+                  <field name="VAR" id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="Nl;/kzNE2={wy[+Z}^uj">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setHTMLElemStyle" id="Wtshn00q*gL)sG~5`_Pu">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="displayDropdown" id="pQQM2JIN7wc)yix:d2Gm">
+                  <field name="TEXT">none</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="%qX$wVB!_**E{#=B@VUo">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="lists_create_with" id="`8nIUM3JG-)mE(k7{p]a">
+                  <mutation items="6"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="]`SMU9Z0Bk]T!w,RqYSq">
+                      <field name="TEXT">an_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="yp#kvs{o~XHhcNbpmMaR">
+                      <field name="TEXT">an_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="1LknS)iT_|d+PyZ_Gk*L">
+                      <field name="TEXT">an_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="N~2[/eFK$beD)w}hVjKf">
+                      <field name="TEXT">an_4</field>
+                    </block>
+                  </value>
+                  <value name="ADD4">
+                    <block type="text" id="8KbT_pTYkXUc7:2vL2hs">
+                      <field name="TEXT">an_5</field>
+                    </block>
+                  </value>
+                  <value name="ADD5">
+                    <block type="text" id="n.0%NTf(#i|_oJx2sHTI">
+                      <field name="TEXT">an_6</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="KTS7h8Y+61aM|MQ$Y+y|">
+                  <field name="VAR" id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="wdL~tW0Kbf!fUTP9?.rK">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="setHTMLElemStyle" id="aN66rT[|GSqh|,0!phco">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="displayDropdown" id="t,1qQEGIF!NuOwZb+2aF">
+                  <field name="TEXT">block</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="%qX$wVB!_**E{#=B@VUo">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="lists_create_with" id="*bL%Grb2I1cruNkQIt3v">
+                  <mutation items="6"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="3`E22,Z50C8P*X$qsJ@z">
+                      <field name="TEXT">an_1</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="bDGnJGO|+UKNURg=U24;">
+                      <field name="TEXT">an_2</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="#cG.Cmgz2Q8gU;AgvdsZ">
+                      <field name="TEXT">an_3</field>
+                    </block>
+                  </value>
+                  <value name="ADD3">
+                    <block type="text" id="m(T~Kg*PnQDa%=EY9o#K">
+                      <field name="TEXT">an_4</field>
+                    </block>
+                  </value>
+                  <value name="ADD4">
+                    <block type="text" id="WX:}-),0E%4Wu`=WMBwR">
+                      <field name="TEXT">an_5</field>
+                    </block>
+                  </value>
+                  <value name="ADD5">
+                    <block type="text" id="G7C.Hd[n@w+WAt4XPV-C">
+                      <field name="TEXT">an_6</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="QwXAXo!3_wz^fA!})#T9">
+                  <field name="VAR" id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="FYKyJTkV@WBSVNuT+B{I">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="458.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

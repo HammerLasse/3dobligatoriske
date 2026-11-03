@@ -8,6 +8,7 @@
 
 # Verge3D puzzle backups
 v3d_app_data/puzzles_backup/
+v3d_app_data/update_backup/
 
 # Operating system files
 .DS_Store
