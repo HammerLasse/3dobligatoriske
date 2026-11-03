@@ -40,5 +40,17 @@ noscript {
     background-image: url('media/fullscreen_close.svg');
 }
 
+/* Annotation styles */
+.annotation-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.annotation-hover:hover .annotation-details {
+    display: block;
+}
+
 /* removes tap blinking on ios devices */
 * { -webkit-tap-highlight-color:rgba(0,0,0,0); }

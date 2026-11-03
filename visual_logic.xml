@@ -1,14 +1,14 @@
 <xml xmlns="https://www.soft8soft.com/puzzles/xml">
   <tab name="Init" type="InitTab" active="false" scrollx="9.22225568936392" scrolly="0" scale="0.9222255689363639"></tab>
-  <tab name="Main" type="CommonTab" active="true" scrollx="281.0326134042689" scrolly="483.353900153867" scale="0.6762949393072257">
+  <tab name="Main" type="CommonTab" active="false" scrollx="88.03261340426889" scrolly="426.06581176355223" scale="0.6762949393072257">
     <variables>
       <variable id="6KY7UslK?s3[MmZ*X`hN">ramOut</variable>
+      <variable id="hqwVu:*+{u~38Z:#GbNH">panelOpen</variable>
       <variable id="5Q_*5Gn1KS%6KBa1:Mi9">gpuIsOut</variable>
       <variable id="#U!J/8(y0u#Wwxp~9ACr">isFanOut</variable>
       <variable id="8XpwY}XDlfeYz9N|=+G=">moboOut</variable>
       <variable id="{LR2SJRY7y++:*`Dx+1j">isTakeAllOut</variable>
       <variable id="X)?^bBIxOM]F?,-QC5~+">isCpuCoolerOut</variable>
-      <variable id="hqwVu:*+{u~38Z:#GbNH">panelOpen</variable>
       <variable id="}vi,LeGF0Ey8lU!TIn`r">i</variable>
       <variable id="2{;Vtsjn}#zoq;*.*;Yc">annotations</variable>
     </variables>
@@ -1479,7 +1479,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Annotations" type="CommonTab" active="false" scrollx="177.0524042671168" scrolly="72.95502576997387" scale="0.5503695207252172">
+  <tab name="Annotations" type="CommonTab" active="true" scrollx="-194.70196933753232" scrolly="-9.354537200105597" scale="0.7375477954567339">
     <variables>
       <variable id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</variable>
       <variable id="2{;Vtsjn}#zoq;*.*;Yc">annotations</variable>
@@ -1498,7 +1498,7 @@
       </value>
       <value name="CONTENTS">
         <shadow type="text" id="e6+.HwbCvgsUM{??7+V#">
-          <field name="TEXT">Side panel</field>
+          <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;Side panel&lt;/span&gt;     &lt;div class="annotation-details"&gt;         Sidepanelet monteres på siden af kabinettet og lukker computeren.     &lt;/div&gt; &lt;/div&gt;</field>
         </shadow>
       </value>
       <value name="ID">
@@ -1521,7 +1521,7 @@
           </value>
           <value name="CONTENTS">
             <shadow type="text" id="D0(p6#^fb4xrcP:7FGaW">
-              <field name="TEXT">CPU/CPU-COOLER</field>
+              <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;CPU/CPU-COOLER&lt;/span&gt;     &lt;div class="annotation-details"&gt;         Processoren monteres i CPU-socket på bundkortet.     &lt;/div&gt; &lt;/div&gt;</field>
             </shadow>
           </value>
           <value name="ID">
@@ -1544,7 +1544,7 @@
               </value>
               <value name="CONTENTS">
                 <shadow type="text" id="@s!Xyw:|,b@IAI.l!@7:">
-                  <field name="TEXT">Fan</field>
+                  <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;Fan&lt;/span&gt;     &lt;div class="annotation-details"&gt;         Kabinetblæsere monteres i kabinettets blæserbeslag.     &lt;/div&gt; &lt;/div&gt;</field>
                 </shadow>
               </value>
               <value name="ID">
@@ -1567,7 +1567,7 @@
                   </value>
                   <value name="CONTENTS">
                     <shadow type="text" id="WkNm@S+[Ui;vK(|pV|ET">
-                      <field name="TEXT">GPU</field>
+                      <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;GPU&lt;/span&gt;     &lt;div class="annotation-details"&gt;         Grafikkortet monteres i PCIe-slottet         på bundkortet.     &lt;/div&gt; &lt;/div&gt;</field>
                     </shadow>
                   </value>
                   <value name="ID">
@@ -1590,7 +1590,7 @@
                       </value>
                       <value name="CONTENTS">
                         <shadow type="text" id=";gC}mb]aE+FGTtP9I~3H">
-                          <field name="TEXT">RAM</field>
+                          <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;RAM&lt;/span&gt;     &lt;div class="annotation-details"&gt;         RAM monteres i DIMM-slots på bundkortet.     &lt;/div&gt; &lt;/div&gt;</field>
                         </shadow>
                       </value>
                       <value name="ID">
@@ -1613,7 +1613,7 @@
                           </value>
                           <value name="CONTENTS">
                             <shadow type="text" id="MnR3E!]?E^PsHw0)q3lb">
-                              <field name="TEXT">Motherboard</field>
+                              <field name="TEXT">&lt;div class="annotation-hover"&gt;     &lt;span&gt;Motherboard&lt;/span&gt;     &lt;div class="annotation-details"&gt;         Bundkortet monteres i kabinettet og forbinder computerens komponenter.     &lt;/div&gt; &lt;/div&gt;</field>
                             </shadow>
                           </value>
                           <value name="ID">
