@@ -1479,7 +1479,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Annotations" type="CommonTab" active="true" scrollx="-194.70196933753232" scrolly="-9.354537200105597" scale="0.7375477954567339">
+  <tab name="Annotations" type="CommonTab" active="false" scrollx="-194.70196933753226" scrolly="-66.37930159110607" scale="0.7375477954567339">
     <variables>
       <variable id="_Z[oh*f=QBBgpRC3=of~">annotation_visible</variable>
       <variable id="2{;Vtsjn}#zoq;*.*;Yc">annotations</variable>
@@ -1845,5 +1845,902 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="458.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <tab name="Glow" type="CommonTab" active="true" scrollx="-62.63947868569551" scrolly="-84.1518411212723" scale="0.6715938569729636">
+    <block type="whenHovered" id="Opxsb]?n[;MFI!*Dz5b!" inline="false" x="270" y="-10">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="jd+$UTt_YojplaipSaEi">
+          <field name="FIELDNAME">Cube.154</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="CHCk3A98?,NmA+cs$nxI">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id=")tqstz4t|`e7|^lFul=(">
+              <field name="FIELDNAME">Material.097</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="Y9W3`zSF)/JS1,PTw.;K">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="R1P/;P-mab,|Y|lEwX!w">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="Z^at7w@#Ee@Laxf3W#7^">
+              <field name="FIELDNAME">Material.097</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="V61q2T]J{]8ZK|j|wL_W">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="yM1i~|G-tp*QjPsR`%jE" inline="false" x="890" y="-10">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="I7G0yGIPdvS3CeP+A8cF">
+          <field name="FIELDNAME">Cube.101</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="_-@dP{iCA/o?f{A#F~4U">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="^g^5(BXUbi,S(R]|5$XQ">
+              <field name="FIELDNAME">Material.061</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="/X#`Y[UlnkG=xU($c^S?">
+              <field name="NUM">1.2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="x25dLxme=aPLa]ntz4go">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="s_a#r,%g}.*JPhkjQ]|G">
+                  <field name="FIELDNAME">Material.062</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="9~(p7pfDjLvcVLpi2qAz">
+                  <field name="NUM">1.2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="D%rKJ7W=jT`CNF}R$A52">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="1Y%OVV~P)USxl6lsUfa`">
+                      <field name="FIELDNAME">Material.064</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="yDM]|iaIw)OFCJ30C14`">
+                      <field name="NUM">1.2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="%a`g?)CZfz*/|kEjUX)|">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="2UaB)=lmVJwa@k(=GggA">
+                          <field name="FIELDNAME">Material.066</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="D@I`Srg.YhBZ2[Vfd~-U">
+                          <field name="NUM">1.2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setMaterialValue" id="!g{%[ne5)D.U^}luK_0{">
+                          <mutation flexvalinput="false"></mutation>
+                          <field name="MAT_VAL_NAME">Value</field>
+                          <value name="MATERIAL">
+                            <shadow type="materialList" id="_QY/7}5KtPh/l=*/%2L!">
+                              <field name="FIELDNAME">Material.068</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE">
+                            <shadow type="math_number" id="-=X|JRHJdA;-[gK-:8Pn">
+                              <field name="NUM">1.2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setMaterialValue" id="6mn6czcn(Uy[=w9l(I0B">
+                              <mutation flexvalinput="false"></mutation>
+                              <field name="MAT_VAL_NAME">Value</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList" id="xqFD]nn6yo6U$zEJZ-zs">
+                                  <field name="FIELDNAME">Material.069</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <shadow type="math_number" id="T{X=X!`qJ/!~vq8_jIz%">
+                                  <field name="NUM">1.2</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setMaterialValue" id="vl2Nk*U#kIAyN4*-_mAF">
+                                  <mutation flexvalinput="false"></mutation>
+                                  <field name="MAT_VAL_NAME">Value</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList" id="*`.wKWs%_x3dVi2|[2zE">
+                                      <field name="FIELDNAME">Material.070</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="k$Xpp$lWMKd~gpF{k:r]">
+                                      <field name="NUM">1.2</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setMaterialValue" id="8TXnDiuPPam1Yj%DM!da">
+                                      <mutation flexvalinput="false"></mutation>
+                                      <field name="MAT_VAL_NAME">Value</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList" id="havGahr;tc/[DE[5[d1.">
+                                          <field name="FIELDNAME">Material.067</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="?]R{tK@paH-yHVw7tk2)">
+                                          <field name="NUM">1.8</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="setMaterialValue" id="=@=!Q:]9(YED:StkMl`A">
+                                          <mutation flexvalinput="false"></mutation>
+                                          <field name="MAT_VAL_NAME">Value</field>
+                                          <value name="MATERIAL">
+                                            <shadow type="materialList" id="IB@4G+~eE=n:k(M0LJ9m">
+                                              <field name="FIELDNAME">Material.071</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE">
+                                            <shadow type="math_number" id="EPax}H.hONZEY$QLBXRW">
+                                              <field name="NUM">1.8</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="setMaterialValue" id="q#`yvxK4:}-CD$`qN}L,">
+                                              <mutation flexvalinput="false"></mutation>
+                                              <field name="MAT_VAL_NAME">Value</field>
+                                              <value name="MATERIAL">
+                                                <shadow type="materialList" id=")iYzZ^`}S.o`}*]KQr@B">
+                                                  <field name="FIELDNAME">Material.074</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE">
+                                                <shadow type="math_number" id="E:ZADF{%MlcY-Q$|!G:4">
+                                                  <field name="NUM">1.2</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="setMaterialValue" id="_4KxkV_T@/H(nD%TAIjY">
+                                                  <mutation flexvalinput="false"></mutation>
+                                                  <field name="MAT_VAL_NAME">Value</field>
+                                                  <value name="MATERIAL">
+                                                    <shadow type="materialList" id="mMefSr*F}-;:}Hel*wn6">
+                                                      <field name="FIELDNAME">Material.075</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE">
+                                                    <shadow type="math_number" id="rB8lb]!TQ;nueOGXC}HZ">
+                                                      <field name="NUM">1.2</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setMaterialValue" id="aS(a?BlWLu#cqYyW/q}/">
+                                                      <mutation flexvalinput="false"></mutation>
+                                                      <field name="MAT_VAL_NAME">Value</field>
+                                                      <value name="MATERIAL">
+                                                        <shadow type="materialList" id="kbcuFUqxOG9PzvDA_CS,">
+                                                          <field name="FIELDNAME">Material.079</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="VALUE">
+                                                        <shadow type="math_number" id="khX@?Rd?baOM=Hb$rwum">
+                                                          <field name="NUM">1.2</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="setMaterialValue" id=".Er(qU4:7(%uaByCI.X!">
+                                                          <mutation flexvalinput="false"></mutation>
+                                                          <field name="MAT_VAL_NAME">Value</field>
+                                                          <value name="MATERIAL">
+                                                            <shadow type="materialList" id="c/u(0.q6(M0=7dx5|^%W">
+                                                              <field name="FIELDNAME">Material.085</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="VALUE">
+                                                            <shadow type="math_number" id="Z^zXZ4{8W1m)R):g:];p">
+                                                              <field name="NUM">1.2</field>
+                                                            </shadow>
+                                                          </value>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="=v;InsR[%::X;,oa,jVW">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="vm6Y:.72tS9Mtuo~:39f">
+              <field name="FIELDNAME">Material.061</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="TXa!NC(xG`^pLYeVIXvp">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="+PCAuT5R)dRXpAJLZm:C">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="XHcI+DaAF[Szro~JP6KO">
+                  <field name="FIELDNAME">Material.062</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="C|j]4y.O#,Lh#mo(bhl?">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="TWEf6*N#SSU!d1lPHI=N">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="@KC;z6:$k%eBm1=yIs$S">
+                      <field name="FIELDNAME">Material.064</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="wyhpt+d)3Y((Rqu).xA6">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="L+/FPYQ%o_E=vl^U[mp1">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="--~FMRU#7_GdempiVUfC">
+                          <field name="FIELDNAME">Material.066</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="i;)-|BuQMXv=T~z`@5x/">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setMaterialValue" id="rydR[oS/fv+pbJ,9gNAI">
+                          <mutation flexvalinput="false"></mutation>
+                          <field name="MAT_VAL_NAME">Value</field>
+                          <value name="MATERIAL">
+                            <shadow type="materialList" id="LzUyTqEnOEQENh#@O+]5">
+                              <field name="FIELDNAME">Material.068</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE">
+                            <shadow type="math_number" id="2;-`96q4rq5p@^k2`@OY">
+                              <field name="NUM">0</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setMaterialValue" id="?u6@m*W|lFLP_w9QLF-y">
+                              <mutation flexvalinput="false"></mutation>
+                              <field name="MAT_VAL_NAME">Value</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList" id="K`:z0V+wi7,^KqfTC%G]">
+                                  <field name="FIELDNAME">Material.069</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <shadow type="math_number" id="dA}!2;UIf=/ik}j%dHuM">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setMaterialValue" id="!Z[ST*X9Ok@pqek}~W*C">
+                                  <mutation flexvalinput="false"></mutation>
+                                  <field name="MAT_VAL_NAME">Value</field>
+                                  <value name="MATERIAL">
+                                    <shadow type="materialList" id=":2N5j+VM5TMUxAG/gdwb">
+                                      <field name="FIELDNAME">Material.070</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="dB~Qde,TNVmx:0KtD,_P">
+                                      <field name="NUM">0</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setMaterialValue" id="NckE/Czhu};No`U3XW=~">
+                                      <mutation flexvalinput="false"></mutation>
+                                      <field name="MAT_VAL_NAME">Value</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList" id="u;d:(T3T]Pu3/q_~+t*t">
+                                          <field name="FIELDNAME">Material.067</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="M-AC4H7v0.m8_8:{yF?Y">
+                                          <field name="NUM">0</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="setMaterialValue" id="$-|}N}HK*$sz#v4{|^:L">
+                                          <mutation flexvalinput="false"></mutation>
+                                          <field name="MAT_VAL_NAME">Value</field>
+                                          <value name="MATERIAL">
+                                            <shadow type="materialList" id="K}swOLTj:=go?sd]NZ/i">
+                                              <field name="FIELDNAME">Material.071</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="VALUE">
+                                            <shadow type="math_number" id="Vrr42;=9vc9Z~wD?_@Lv">
+                                              <field name="NUM">0</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="setMaterialValue" id="sfD.qPc/*}2n]kAGwH.h">
+                                              <mutation flexvalinput="false"></mutation>
+                                              <field name="MAT_VAL_NAME">Value</field>
+                                              <value name="MATERIAL">
+                                                <shadow type="materialList" id="XFBjRqljD8w?h_`PTjZJ">
+                                                  <field name="FIELDNAME">Material.074</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="VALUE">
+                                                <shadow type="math_number" id="MmdxqU}0$A`=DZL;qOIN">
+                                                  <field name="NUM">0</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="setMaterialValue" id="b%yXoq5-rDNfgS6gjaL%">
+                                                  <mutation flexvalinput="false"></mutation>
+                                                  <field name="MAT_VAL_NAME">Value</field>
+                                                  <value name="MATERIAL">
+                                                    <shadow type="materialList" id="ZjQ:EqYVAijNrZRfCSFq">
+                                                      <field name="FIELDNAME">Material.075</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="VALUE">
+                                                    <shadow type="math_number" id="CEEBV]+B7llIDV;ls%RX">
+                                                      <field name="NUM">0</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setMaterialValue" id="USe3trzaG.4D0SL[^z-Q">
+                                                      <mutation flexvalinput="false"></mutation>
+                                                      <field name="MAT_VAL_NAME">Value</field>
+                                                      <value name="MATERIAL">
+                                                        <shadow type="materialList" id="k@JY2XS}%qqEtDt?9k~9">
+                                                          <field name="FIELDNAME">Material.079</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="VALUE">
+                                                        <shadow type="math_number" id="TtSB1SZ,X]p5{T]-0]Oe">
+                                                          <field name="NUM">0</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="setMaterialValue" id="n7A4tELPl-ZSyO,Z5J[J">
+                                                          <mutation flexvalinput="false"></mutation>
+                                                          <field name="MAT_VAL_NAME">Value</field>
+                                                          <value name="MATERIAL">
+                                                            <shadow type="materialList" id=";TsmywUKQCFRv^J!rw]!">
+                                                              <field name="FIELDNAME">Material.085</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="VALUE">
+                                                            <shadow type="math_number" id="w.55TH`ekNbZH`0(Hf=h">
+                                                              <field name="NUM">0</field>
+                                                            </shadow>
+                                                          </value>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="-E;@wsDf4;#CL3YuOJ,:" inline="false" x="270" y="150">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="g3_K#nGuYQvaU.Xs+P^2">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="groupList" id="|TqY5k?^qV5Jo8D%WciC">
+          <field name="FIELDNAME">Ram</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="z(3Z//WC$;*hpRW4sC6B">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="#6`+I9R#?e*.+B%QvRPW">
+              <field name="FIELDNAME">Material.046</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="MMFNDv6X[e6V:pF![Sg#">
+              <field name="NUM">1.2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="Fm4#@dr_k]EGUI$Q,/:1">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="rwB^hEVE,B`V|CQ^,Zz;">
+                  <field name="FIELDNAME">Material.047</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="5lGw}p)ClC^+3/eKhC|v">
+                  <field name="NUM">1.2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="iw{$xrT?{7MxHi+x$vCM">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="F]kzLv4F[^}77|Pf$@eW">
+                      <field name="FIELDNAME">Material.048</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="7pF3.D)PgW6F0eBdqF4=">
+                      <field name="NUM">1.2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="vkN$}#bIBR0Pqhux4r]g">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="z@N^F[mx/S.hA)Zj|+=P">
+                          <field name="FIELDNAME">Material.049</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="=nj1xs*[k6//Lc(lLex/">
+                          <field name="NUM">1.2</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="1Wm8M*2mnrb-TXD${|ft">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="DKxc!k*L?~wEsJij:Rf}">
+              <field name="FIELDNAME">Material.046</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="+Ga./7F0p*$mhr|g4t64">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="Mg]xCbfa8;X%!p9c6?:8">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id=",?IeMX(.+8Rop_3:alp%">
+                  <field name="FIELDNAME">Material.047</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="*5N%%ml^D8e72e9Qk[k.">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="46q`9rao;%jvm~.d69@h">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="If}^ZSQhkZIuj:bXn*Me">
+                      <field name="FIELDNAME">Material.048</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="PW~Dz4ynr3RfT:Xni2F4">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="l=8GjX=Zc8@KJv#i;/JN">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="E|!zq,dv(7dHW{Xbx/f[">
+                          <field name="FIELDNAME">Material.049</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="+X(cxmZwC;^rw#+N`+7R">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="3F~.!jz9F/SuYKfuv#2f" inline="false" x="270" y="550">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="MqzCFm..#6_@4fVJ;~SG">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="groupList" id="6U?CaZ!C2fqZ+;}XSZRC">
+          <field name="FIELDNAME">Fan</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="hegR-cpGQW{nQgE_[95H">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="R8Z}~2a{4(F@@fWhRh2[">
+              <field name="FIELDNAME">Material.087</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="uOlxf%*q$wm_39$008Oz">
+              <field name="NUM">1.2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id=",~I?WxYV^o,n7@Q+IQzD">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="3%8f|I}l*Bs(E6mZUxn+">
+                  <field name="FIELDNAME">Material.089</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="hliWra%s*iz+pAZN)f!{">
+                  <field name="NUM">1.2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="cV10Y7Fh1a5#IP@AFTl9">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="O@0d5T{?M..~R*/{?QSt">
+                      <field name="FIELDNAME">Material.094</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="9N6vn$2/X][VM-GEo1f/">
+                      <field name="NUM">1.2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="r3is=5HMeyGFCi1PfZhV">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="|Z|whm@N=*JsrYkw+{qt">
+                          <field name="FIELDNAME">Material.040</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="waavT,v{JH.UNuS$K0Ls">
+                          <field name="NUM">4</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="0O191jUj3;zlS.N`;[J%">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="#wvlL3rD7M](P.b;@1.+">
+              <field name="FIELDNAME">Material.087</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="qR9[C|%ip=}/9FG?rGrS">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="+xzA:x4@!#hvN1zxcRUD">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="QjKQ7*$3,Vjb.A|6CqD@">
+                  <field name="FIELDNAME">Material.089</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="^,a@YTHmm,5P@dR1-3#)">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="rOQa!n`RPt+a?8Ea%h5c">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="_ssdIb+2BHY0GF.`d$5g">
+                      <field name="FIELDNAME">Material.094</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="5/gWI*V]qddMB_O@i+]h">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setMaterialValue" id="k;j5hU4n{Bfi4QwK+bS-">
+                      <mutation flexvalinput="false"></mutation>
+                      <field name="MAT_VAL_NAME">Value</field>
+                      <value name="MATERIAL">
+                        <shadow type="materialList" id="YFs}vq^6XWS+T2~P|e)(">
+                          <field name="FIELDNAME">Material.040</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE">
+                        <shadow type="math_number" id="=F)?0jOyw5k)QK?!uwzy">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="~[60U/0mv6Q@q9e8{q@0" inline="false" x="270" y="950">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id=".7@(clA8U1-||ffXXPp:">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="groupList" id="}VI#QM0~J;:mJN{Z)e/3">
+          <field name="FIELDNAME">CPU/CPU-Cooler</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="nh2h53U|7:+pPInKHc]w">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="9$]%h]@b9Z/ZGZDUw-/t">
+              <field name="FIELDNAME">Material.052</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="0I4_xtH.v1gGjM8g]^xI">
+              <field name="NUM">1.2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="M%;A0jk:8.}AvmMi.I9T">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="ms@_z!E!d%o_Lr[uuTag">
+                  <field name="FIELDNAME">Material.053</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="g(TJ)V/lJ4;0q6u;NGKp">
+                  <field name="NUM">1.2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="[EQ:!bf::mO%-:8Tj,7;">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="isRYgS.YNb7j_gYap!PR">
+                      <field name="FIELDNAME">Material.054</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="]eXV4I7oSaN(A)XY%!6V">
+                      <field name="NUM">0.8</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="hhKr3sT_5D_aF4}]y*Wq">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="%^E.WyEUXO+=vycX]%GM">
+              <field name="FIELDNAME">Material.052</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="Ka[jAJRDxG}ycG7W}gW[">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="XMymiBL*-fcFcmDM+7a#">
+              <mutation flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="%=o8d{(9yNjgGiEb[*Cm">
+                  <field name="FIELDNAME">Material.053</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="]xZHZ+N:G)=`t!;@Ep%v">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="*@sqz[YWEIpSQb$SiiaF">
+                  <mutation flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="Mwt`~MMDYs9Jp97,1_R%">
+                      <field name="FIELDNAME">Material.054</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="Yg:b!Ai+O/}D3c$H%oBE">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="whenHovered" id="~b%7:`-sWinETjc3[SP{" inline="false" x="890" y="1070">
+      <mutation adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="8M4-`pZbC8s4,{A}A}5M">
+          <field name="FIELDNAME">Cube.009</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="setMaterialValue" id="%B!B(=$*OPOT,H2*h/g~">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="~sUaXHR?G}bFc5Ectk;Y">
+              <field name="FIELDNAME">Material.098</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="sl1|[J8nU*PA9OkvH+r`">
+              <field name="NUM">1.2</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="setMaterialValue" id="eTe|PnNqF7)=X5L7^Qpx">
+          <mutation flexvalinput="false"></mutation>
+          <field name="MAT_VAL_NAME">Value</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="ck9fA?=/cfS`8pcpy:e-">
+              <field name="FIELDNAME">Material.098</field>
+            </shadow>
+          </value>
+          <value name="VALUE">
+            <shadow type="math_number" id="1X~rH=`IgpYDz+7oe8#u">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1120" viewport-y="37" viewport-w="782" viewport-h="485.167" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
